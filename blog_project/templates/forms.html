@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block contact %}
+
+<div class="container">
+		<h2 class="header left orange-text">Contact us</h2>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<form method ='POST' action= ''>{% csrf_token %}
+			{{form|crispy}}
+
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<input type='submit' value='Submit' id="download-button" class="btn-large waves-effect waves-light orange">
+
+		</form>
+
+		<br>
+		<br>
+		<br>
+		<br> 
+</div>
+{% endblock %}
