@@ -1,4 +1,8 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block blog %}
      
     {% block title %}{{post.title}}{% endblock %}
      
@@ -19,3 +23,5 @@
         {{post.content|safe}}
     </article>
     {% endblock %}
+
+{% endblock %}

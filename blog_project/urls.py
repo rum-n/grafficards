@@ -21,8 +21,9 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'blog.views.home', name='home'),
-    url(r'^blog/$', 'blog.views.blog_page', name='blogpage'),
+    url(r'^blog/$', 'blog.views.post', name='blogpage'),
     url(r'^contact/$', 'blog.views.contact', name='contact'),
+    url(r'^about/$', 'blog.views.about', name='about'),
     url(r'^(?P<slug>[\w\-]+)/$', 'blog.views.post'),
 ]
 

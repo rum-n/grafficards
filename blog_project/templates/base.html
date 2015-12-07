@@ -23,7 +23,8 @@
 
     {% block main %} {% endblock %}
     {% block contact %} {% endblock %}
-    {% block blog %} {% endblock %}
+    {% block about %} {% endblock %}
+    {% block content_blog %} {% endblock %}
 
     {% include 'footer.html' %}
   
@@ -39,7 +40,16 @@
             $(".button-collapse").sideNav();
          }
         )
+
+        $(document).ready(function(){
+            $('.collapsible').collapsible({
+            accordion : false 
+        });
+      });
+
     </script>
+
+
 
   </body>
 </html>

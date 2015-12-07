@@ -49,3 +49,6 @@ def home(request):
 
 def blog_page(request):
     return render (request, 'blogpage.html', {})
+
+def about(request):
+    return render (request, 'about.html', {})
