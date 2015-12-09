@@ -52,3 +52,18 @@ def blog_page(request):
 
 def about(request):
     return render (request, 'about.html', {})
+
+def first_step(request):
+    return render (request, 'card_choice.html', {})
+
+def second_step(request):
+    return render (request, 'message_input.html', {})
+
+def third_step(request):
+    return render (request, 'address_input.html', {})
+
+def final_step(request):
+    return render (request, 'summary.html', {})
+
+def sent_success(request):
+    return render (request, 'postcard_sent_success.html', {})

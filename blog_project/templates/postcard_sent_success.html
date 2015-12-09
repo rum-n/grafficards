@@ -1,3 +1,15 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load staticfiles %}
 {% load crispy_forms_tags %}
+
+{% block postcard_success %}
+
+<div class="section">
+	</div>
+		<div class="container">
+			<h2 class="header center orange-text light">Your postcard is on its way!</h2>
+		</div>
+	<div class="section">
+</div>
+
+{% endblock %}

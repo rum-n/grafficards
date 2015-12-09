@@ -1,3 +1,15 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% load crispy_forms_tags %}
+
+{% block first_step %} 
+
+    <div class="section">
+
+      <div class="row center">
+        <a href="{% url 'message_input' %}" id="download-button" class="btn-large waves-effect waves-light orange">Next</a>
+      </div>
+
+    </div>
+
+{% endblock %}

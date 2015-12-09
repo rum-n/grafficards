@@ -11,7 +11,7 @@
         <h5 class="header col s12 light">A handcrafted beautiful postcard with your message inside</h5>
       </div>
       <div class="row center">
-        <a href="" id="download-button" class="btn-large waves-effect waves-light orange">Try it out</a>
+        <a href="{% url 'card_choice' %}" id="download-button" class="btn-large waves-effect waves-light orange">Try it out</a>
       </div>
       <br><br>
 
@@ -100,11 +100,12 @@
     <div class="section">
 
       <div class="row center">
-        <a href="" id="download-button" class="btn-large waves-effect waves-light orange">Try it out</a>
-      </div>
-
+        <a href="{% url 'card_choice' %}" id="download-button" class="btn-large waves-effect waves-light orange">Try it out</a>
+      </div> 
     </div>
   </div>
+            <div class="section">
+            </div> 
 
   </div>
 
@@ -113,8 +114,6 @@
       <h4 class="header col s12 light">How it looks like</h4>
     </div>
     <div class="row center">
-        <a href="" id="download-button" class="btn-large waves-effect waves-light orange">Try it out</a>
+        <a href="{% url 'card_choice' %}" id="download-button" class="btn-large waves-effect waves-light orange">Try it out</a>
     </div>
-
-
 {% endblock %}

@@ -24,6 +24,11 @@ urlpatterns = [
     url(r'^blog/$', 'blog.views.post', name='blogpage'),
     url(r'^contact/$', 'blog.views.contact', name='contact'),
     url(r'^about/$', 'blog.views.about', name='about'),
+    url(r'^card_choice/$', 'blog.views.first_step', name='card_choice'),
+    url(r'^message_input/$', 'blog.views.second_step', name='message_input'),
+    url(r'^address_input/$', 'blog.views.third_step', name='address_input'),
+    url(r'^summary/$', 'blog.views.final_step', name='summary'),
+    url(r'^postcard_sent_success/$', 'blog.views.sent_success', name='postcard_sent_success'),
     url(r'^(?P<slug>[\w\-]+)/$', 'blog.views.post'),
 ]
 

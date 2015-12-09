@@ -13,6 +13,13 @@
 
 #copyright {
   padding-left: 1em;
+  padding-bottom: 1em;
+  font-size: 0.75em;
+}
+
+#paypal {
+  padding-right: 1em;
+  padding-bottom: 1em;
   font-size: 0.75em;
 }
 
@@ -2219,6 +2226,7 @@ ul.staggered-list li {
     text-align: center; } }
 
 footer.page-footer {
+  text-align: center;
   margin-top: 20px;
   padding-top: 20px;
   background-color: #ee6e73; }
